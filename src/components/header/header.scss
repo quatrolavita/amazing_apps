@@ -1,0 +1,22 @@
+.header {
+	padding-top: 68px;
+	margin-bottom: 50px;
+
+	&__container {
+		@include container;
+	}
+
+	&__logo {
+		margin-right: 121px;
+	}
+
+	&__nav{
+		margin-right: 40px;
+
+	}
+
+	&__search-icon {
+		margin-right: 320px;
+	}
+
+}

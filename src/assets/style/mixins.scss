@@ -1,0 +1,1 @@
+@mixin container {  display: flex;  max-width: 1120px;  width: 100%;  margin: 0 auto;  padding: 0 20px 0 20px;}@mixin font-family($family, $size, $weight, $font-color) {  color: $font-color;  font-family: $family;  font-size: $size;  font-weight: $weight;}
