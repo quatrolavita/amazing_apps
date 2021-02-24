@@ -1,0 +1,48 @@
+.form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	width: 100%;
+	height: 500px;
+	padding: 34px ;
+
+	border-radius: 40px;
+	background: $white;
+	&__wrap {
+		display: flex;
+		}
+	&__input-wrap {
+		display: flex;
+		flex-direction: column;
+		&:first-child {
+			margin-right: 40px;
+			}
+		}
+
+	&__input-text {
+		@include font-family($avenir-bold, $font-normal-size, 42px, $font-main-color);
+
+		min-width: 476px;
+		margin-bottom: 44px;
+
+		border-color: rgba(156, 105, 226, 0.2);
+		border-bottom: 2px solid;
+		outline: none;
+
+		&::placeholder {
+			@include font-family($avenir-bold, $font-normal-size, 16px, $font-main-color);
+			}
+
+		&:invalid {
+			border-color: $input-ivalid-color;
+			}
+		}
+	.button {
+		align-self: flex-end;
+		}
+
+	.title {
+		margin-bottom: 65px;
+		}
+	}

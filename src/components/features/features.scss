@@ -1,0 +1,41 @@
+.features {
+	margin-bottom: 100px;
+
+	border-color: rgba(156, 105, 226, 0.2);
+	border-bottom: 2px solid;
+	&__container {
+		@include container;
+
+		align-items: center;
+		flex-direction: column;
+		}
+	&__text-wrap {
+		max-width: 584px;
+		margin-bottom: 71px;
+
+		text-align: center;
+		}
+	&__cards-wrap {
+		position: relative;
+
+		display: flex;
+		flex-wrap: wrap;
+		}
+
+	@media (max-width: $screen-xl) {
+		margin-bottom: 0;
+
+		border: none;
+
+		&__cards-wrap {
+			justify-content: center;
+			}
+		}
+	@media (max-width: $screen-s) {
+		&__text-wrap {
+			margin-bottom: 100px;
+
+			text-align: left;
+			}
+		}
+	}

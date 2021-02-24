@@ -1,1 +1,64 @@
-.button {        position: relative;        height: 60px;        &__link {                @include font-family($avenir, $font-normal-size, $font-bold-weight, $font-main-color);                text-decoration: none;                box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);                border-radius: 50px;        }        &--demo {                .button {                        width: 210px;                        &__link {                                padding: 17px 70px 17px 29px;                                &:after {                                        content: '';                                        background: url('../../assets/images/arrow.svg') center no-repeat;                                        position: absolute;                                        right: 29px;                                        width: 22px;                                        height: 16px;                                }                                &:hover {                                        background-color: $hover-bg;                                        transition: .3s;                                }                        }                }        }        &--learn-more {                .button {                        width: 170px;                        &__link {                                padding: 16px 37px 15px 37px;                                background-color: $background-violet;                                color: $background-white;                        }                }        }}
+.button {
+	@include font-family($avenir-medium, $font-normal-size, "16px", $font-main-color);
+
+	position: relative;
+
+	width: 210px;
+	height: 60px;
+	padding: 0 29px;
+
+	transition: 0.3s;
+	text-align: left;
+
+	border-radius: 50px;
+	outline: none;
+	background-color: $white;
+	box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
+	&:hover {
+		background-color: $hover-background-color;
+		}
+	&:focus {
+		background-color: darken($hover-background-color, 10%);
+		}
+
+	&__link {
+		display: inline-block;
+
+		width: 100%;
+		height: 100%;
+		padding: 16px 0;
+
+		text-decoration: none;
+		}
+	&--demo {
+		&:after {
+			position: absolute;
+			right: 23px;
+
+			width: 22px;
+			height: 16px;
+
+			content: "";
+
+			background: url("../../assets/images/arrow.svg") center no-repeat;
+			}
+
+		}
+	&--learn-more {
+		@include font-family($avenir-medium, $font-big-size, 29px, $font-main-color);
+
+		width: 170px;
+
+		text-align: center;
+
+		color: $white;
+		background-color: $violet;
+
+		&:hover {
+			background-color: lighten($violet, 10%);
+			}
+		&:focus {
+			background-color: darken($violet, 5%);
+			}
+		}
+	}

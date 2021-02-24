@@ -1,1 +1,4 @@
-.description {        @include font-family($avenir, $font-big-size, $font-normal-weight, $description-colore);        line-height: 29px;}
+.description {
+	@include font-family($avenir-medium, $font-big-size, 29px, $font-secondary-color);
+
+	}

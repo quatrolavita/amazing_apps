@@ -1,3 +1,9 @@
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 @import "./../../assets/style/variables";
 @import "./../../assets/style/reset";
 @import "./../../assets/style/fonts";
@@ -5,10 +11,14 @@
 @import "./../../components/logo/logo";
 @import "./../../components/nav/nav";
 @import "./../../components/title/title";
+@import "./../../components/burger/burger";
 @import "./../../components/description/description";
 @import "./../../components/feature-card/feature-card";
+@import "./../../components/form/form";
+@import "../../components/popup/popup";
 @import "./../../components/button/button";
+@import "./../../components/social-media/social-media";
 @import "../../components/header/header";
 @import "../../components/slider/slider";
-@import "../../components/company-features/company-features";
+@import "../../components/features/features";
 @import "../../components/footer/footer";
