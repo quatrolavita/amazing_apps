@@ -1,1 +1,1 @@
-some text
+Test task for the company "Amazing apps".## Stack: * **[Scss](https://sass-lang.com/)*** **[Parcel](https://parceljs.org/)*** **[Prettier](https://prettier.io/)*** **[Husky](https://github.com/typicode/husky#readme/)**## CloneClone this repo to your local machine using `https://github.com/sashalavrus/amazing_apps`## Installation#### If you use **[NPM](https://www.npmjs.com/)**```bashnpm i && npm run start```#### If you use **[Yarn](https://classic.yarnpkg.com/en/)**```bashyarn && yarn start```

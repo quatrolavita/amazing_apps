@@ -1,0 +1,7 @@
+.logo {
+	display: flex;
+	align-items: center;
+	&__company-name {
+		@include font-family($avenir-bold, $font-normal-size, 32px, $font-main-color);
+		}
+	}

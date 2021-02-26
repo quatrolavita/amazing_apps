@@ -1,0 +1,50 @@
+.slider {
+	margin-bottom: 125px;
+	&__container {
+		@include container;
+		}
+
+	&__box {
+		padding: 80px 0 80px 104px;
+
+		border-radius: 50px;
+		background: url("../../assets/images/slider-bg.svg") center no-repeat;
+		}
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		width: 100%;
+		padding: 80px 104px;
+		}
+	&__title {
+		max-width: 645px;
+		margin-bottom: 18px;
+		}
+	&__description {
+		max-width: 380px;
+		margin-bottom: 18px;
+		}
+
+	@media (max-width: $screen-xl) {
+		display: none;
+		}
+	}
+
+.glide {
+	&__bullet {
+		opacity: 0.2;
+		background: $violet;
+
+		&--active {
+			opacity: 1;
+			}
+		}
+
+	&__bullets {
+		bottom: -40px;
+
+		}
+
+
+	}

@@ -1,0 +1,91 @@
+.header {
+	margin-bottom: 50px;
+	padding-top: 68px;
+
+	&__container {
+		@include container;
+		}
+
+	&__logo {
+		margin-right: 121px;
+		}
+
+	&__nav {
+		margin-right: 40px;
+
+		}
+
+	&__search-icon {
+		margin-right: 320px;
+		}
+
+	@media (max-width: $screen-xl) {
+		padding-top: 24px;
+
+		&__container {
+			position: relative;
+
+			justify-content: space-between;
+			}
+		&__search-icon {
+			position: absolute;
+			top: 5px;
+			right: 80px;
+
+			margin-right: 0;
+
+			}
+
+		.burger {
+			display: block;
+			}
+
+
+
+		.button {
+			display: none;
+			}
+
+		.nav {
+			position: absolute;
+			top: 120px;
+			left: -100%;
+
+			width: 100%;
+			max-width: none;
+			height: calc(100vh - 59px);
+
+			transition: 0.3s;
+
+			&__list {
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+
+				width: 100%;
+				height: 100%;
+
+				background-color: $white;
+				}
+			&__item {
+				margin-bottom: 20px;
+
+				text-align: center;
+				}
+
+			&--expanded {
+				z-index: 120;
+				top: 59px;
+				right: 0;
+				bottom: 0;
+				left: 0;
+
+				}
+			}
+
+		.logo {
+			margin-right: 0;
+			}
+		}
+
+	}

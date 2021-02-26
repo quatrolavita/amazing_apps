@@ -1,0 +1,46 @@
+.popup {
+	position: fixed;
+	z-index: 10;
+	top: 0;
+
+	display: none;
+
+	width: 100vw;
+	height: 100vh;
+	&__bg {
+		position: fixed;
+		z-index: 10;
+
+		width: 100%;
+		height: 100vh;
+
+		opacity: 0.5;
+		background-color: #000;
+		}
+	&__desktop-Data-popup {
+		@include container;
+
+		position: absolute;
+		z-index: 100;
+		top: 50%;
+		left: 50%;
+
+		justify-content: center;
+
+		height: 560px;
+		padding: 30px;
+
+		transform: translate(-50%, -50%);
+
+		border-radius: 50px;
+		background: linear-gradient(-45deg, #fff -2%, #68c9ba 0, #68c9ba 9%, #fff 0, #fff 35%, #68c9ba 0, #fff -21%, #68c9ba 0, #68c9ba 60%, #fff 0, #fff 84%, #68c9ba 0);
+		background-size: 45px 45px;
+		}
+	&--open {
+		display: block;
+		}
+	}
+
+.scroll-off {
+	overflow: hidden;
+	}
