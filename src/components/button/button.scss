@@ -1,19 +1,22 @@
 .button {
 	@include font-family($avenir-medium, $font-normal-size, "16px", $font-main-color);
 
+	display: inline-block;
 	position: relative;
 
 	width: 210px;
 	height: 60px;
-	padding: 0 29px;
+	padding: 16px 29px;
 
 	transition: 0.3s;
 	text-align: left;
+	text-decoration: none;
 
 	border-radius: 50px;
 	outline: none;
 	background-color: $white;
 	box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
+
 	&:hover {
 		background-color: $hover-background-color;
 		}
@@ -26,8 +29,6 @@
 
 		width: 100%;
 		height: 100%;
-		padding: 16px 0;
-
 		text-decoration: none;
 		}
 	&--demo {
