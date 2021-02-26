@@ -1,0 +1,120 @@
+.footer {
+        padding-bottom: 50px;
+        &__container {
+                @include container;
+
+                flex-direction: column;
+        }
+
+        &__wrap {
+                display: flex;
+                justify-content: space-between;
+
+                &:nth-child(1) {
+                        align-items: center;
+
+                        margin-bottom: 150px;
+                }
+                &:nth-child(2) {
+                        margin-bottom: 93px;
+                }
+
+        }
+
+        &__buttons-wrap {
+                .button {
+                        &--learn-more {
+                                margin-right: 30px;
+                        }
+                }
+        }
+
+        &__company-info-wrap {
+                display: flex;
+                flex-direction: column;
+
+                .logo {
+                        margin-bottom: 65px;
+                        &__img {
+                                margin-right: 20px;
+                        }
+                }
+        }
+
+        &__address {
+                @include font-family($avenir-medium, $font-normal-size, 29px, $font-main-color);
+
+                width: 310px;
+                margin-bottom: 10px;
+        }
+
+        &__contact-info {
+                @include font-family($avenir-medium, $font-normal-size, 29px, $font-main-color);
+
+                width: 190px;
+        }
+
+        &__nav-wrap {
+                display: flex;
+        }
+
+        &__social-media-wrap {
+                display: flex;
+                align-self: flex-start;
+                flex-direction: column;
+        }
+
+        &__rights {
+                @include font-family($avenir-light, $font-extra-small-size, 21px, $font-secondary-color);
+
+                width: 298px;
+        }
+
+        &__title {
+                margin: 0;
+        }
+
+        @media (max-width: $screen-xl) {
+                padding-top: 20px;
+
+                background-color: rgba(156, 105, 226, 0.1);
+
+                &__wrap {
+                        align-items: center;
+                        flex-direction: column;
+
+                        &:nth-child(odd) {
+                                display: none;
+                        }
+                        &:nth-child(even) {
+                                margin-bottom: 0;
+                        }
+
+                }
+
+                &__company-info-wrap {
+                        align-items: center;
+
+                        margin-bottom: 24px;
+
+                        text-align: center;
+                }
+
+                &__nav-wrap {
+                        display: none;
+                }
+
+                &__social-media-wrap {
+                        align-self: center;
+                }
+
+                .title {
+                        display: none;
+                }
+
+                .logo {
+                        display: none;
+                }
+
+        }
+}
